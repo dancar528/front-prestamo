@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="form">
+    <form (submit)="onSubmit()" #commentForm="ngForm">
+      <div class="row">
+        <label for="identificacion">Identificación</label>
+        <input type="text" name="identificacion" [(ngModel)]="identificacion"/>
+      </div>
+      <div class="row">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="name" [(ngModel)]="nombre"/>
+      </div>
+      <div class="row">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" [(ngModel)]="apellido"/>
+      </div>
+      <div class="row">
+        <label for="fh_nacimiento">Fecha de nacimiento</label>
+        <input type="text" name="fh_nacimiento" [(ngModel)]="fh_nacimiento"/>
+      </div>
+      <div class="button">
+        <button>Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="list">
+  <table>
+    <thead>
+      <tr>
+        <td>
+          IDENTIFICACION
+        </td>
+        <td>
+          NOMBRE
+        </td>
+        <td>
+          APELLIDO
+        </td>
+        <td>
+          FECHA NACIMIENTO
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td>
+          {{cliente.identificacion}}
+        </td>
+        <td>
+          {{cliente.nombre}}
+        </td>
+        <td>
+          {{cliente.Apellido}}
+        </td>
+        <td>
+          {{cliente.fecha_nacimiento | date:'dd/MM/yyyy'}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  width: 500px;
+  margin: 80px auto;
+  border: 1px solid #eee;
+  padding: 30px;
+  background-color: #eee;
+}
+* {
+  /*border: 1px solid black;*/
+  font-size: 18px;
+}
+.form {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.row input {
+  flex: 2;
+}
+
+.row label {
+  width: 100px;
+  padding: 10px;
+}
+
+.button {
+  text-align: center;
+  padding: 6px;
+}
+
+.button button {
+  padding: 6px;
+  background-color: white;
+}
+
+.list {
+  width: 600px;
+  margin: auto;
+  border: 1px solid #eee;
+}
+
+.list td {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #eee;
+}
